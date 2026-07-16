@@ -1,0 +1,474 @@
+/*==================================================
+                GOOGLE FONT
+==================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==================================================
+                RESET
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    background: radial-gradient(
+        circle at top,
+        #fff 0%,
+        #f7f3ee 40%,
+        #eef2f7 100%
+    );
+}
+
+a{text-decoration:none;}
+ul{list-style:none;}
+img{width:100%;display:block;}
+
+/*==================================================
+                VARIABLES
+==================================================*/
+
+:root{
+--primary:#ff7b00;
+--secondary:#ffb703;
+--white:#ffffff;
+--dark:#111111;
+--gray:#6c757d;
+--card:#ffffff;
+--border:#e9ecef;
+}
+
+/*==================================================
+                NAVBAR (LIGHT)
+==================================================*/
+
+.custom-navbar{
+padding:18px 0;
+background:#ffffff;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.4s;
+z-index:999;
+border-bottom:1px solid #eee;
+}
+
+.navbar-brand{
+font-size:32px;
+font-weight:700;
+color:var(--primary) !important;
+letter-spacing:1px;
+}
+
+.navbar-brand i{
+color:var(--primary);
+margin-right:8px;
+}
+
+.nav-link{
+color:#333 !important;
+font-weight:500;
+font-size:16px;
+position:relative;
+transition:.3s;
+}
+
+.nav-link:hover{
+color:var(--primary)!important;
+}
+
+/* underline */
+.nav-link::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-5px;
+width:0;
+height:2px;
+background:var(--primary);
+transition:.3s;
+}
+
+.nav-link:hover::after{
+width:100%;
+}
+
+/*==================================================
+                BUTTONS
+==================================================*/
+
+.login-btn{
+color:#333;
+margin-right:15px;
+font-weight:600;
+}
+
+.login-btn:hover{
+color:var(--primary);
+}
+
+.order-btn{
+padding:12px 28px;
+border-radius:40px;
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+color:white;
+font-weight:600;
+transition:.4s;
+box-shadow:0 10px 25px rgba(255,123,0,.2);
+}
+
+.order-btn:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 35px rgba(255,123,0,.35);
+}
+
+/*==================================================
+                HERO (LIGHT VERSION)
+==================================================*/
+
+.hero{
+height:100vh;
+background-image:
+linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+url("../images/hall.jpg");
+
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+color:#fff;
+}
+
+.hero-subtitle{
+background:rgba(255,255,255,.2);
+padding:8px 15px;
+border-radius:20px;
+font-size:14px;
+}
+
+.hero h1{
+font-size:80px;
+/* font-weight:8; */
+}
+
+.hero p{
+font-size:18px;
+max-width:600px;
+}
+
+
+/*==================================================
+                SECTION TITLES
+==================================================*/
+
+.section-title{
+font-size:38px;
+font-weight:600;
+margin-bottom:10px;
+color:#222;
+}
+
+.section-subtitle{
+color:#666;
+}
+
+/*==================================================
+                FEATURED CARDS (LIGHT)
+==================================================*/
+
+.featured{
+height:100vh;
+background-image:
+linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+url("../images/hall2.jpg");
+margin-top: 20px;
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+color:#fff;
+}
+
+.food-card{
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+border:1px solid var(--border);
+}
+
+.food-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.food-card img{
+height:220px;
+object-fit:cover;
+}
+
+.food-body{
+padding:18px;
+}
+
+.food-body h5{
+color:#222;
+font-size:20px;
+}
+
+.food-body p{
+color:#211f1f;
+font-size:14px;
+margin-top:8px;
+}
+
+.rating{
+color:#ffb703;
+margin:8px 0;
+}
+
+.price{
+color:var(--primary);
+font-size:18px;
+font-weight:700;
+}
+
+/*==================================================
+                BUTTON SMALL
+==================================================*/
+
+.order-btn-small{
+display:inline-block;
+padding:8px 18px;
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+color:#fff;
+border-radius:30px;
+font-size:14px;
+transition:.3s;
+}
+
+.order-btn-small:hover{
+transform:scale(1.05);
+}
+
+/*==================================================
+                WHY SECTION
+==================================================*/
+
+.why{
+height:100vh;
+background-image:
+linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+url("../images/chef.jpg");
+margin-top: 20px;
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+color:#201e1e;
+}
+.left-image{
+/* background:#fff; */
+padding:15px 20px;
+margin-top:15px;
+border-radius:12px white;
+box-shadow:0 5px 15px rgba(204, 192, 192, 0.05);
+transition:.3s;
+}
+.left-image:hover{
+    transform:translateY(-10px);
+     transform:scale(1.1);
+}
+.feature-box{
+background:#fff;
+padding:15px 20px;
+margin-top:15px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+transition:.3s;
+}
+
+.feature-box:hover{
+transform:translateX(8px);
+}
+
+.feature-box h5{
+color:var(--primary);
+}
+
+/*==================================================
+                COUNTER
+==================================================*/
+
+.counter{
+background:#fff;
+text-align:center;
+}
+
+.counter .count{
+font-size:40px;
+font-weight:700;
+color:var(--primary);
+}
+
+/* =========================
+   CLEAN GALLERY (LIGHT)
+========================= */
+
+.gallery{
+    background:#f5f7fb;
+    padding:60px 0;
+}
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.gallery-item img{
+    height:250px;
+    object-fit:cover;
+    transition:.4s;
+    width:100%;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.1);
+}
+
+.gallery-item:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/* hover overlay effect */
+.gallery-item::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(255,123,0,.15);
+    opacity:0;
+    transition:.3s;
+}
+
+.gallery-item:hover::after{
+    opacity:2;
+}
+/* =========================
+   TESTIMONIALS (CLEAN)
+========================= */
+
+
+/* ABOUT HERO */
+
+.about-hero{
+
+padding:140px 0 100px;
+
+background:
+linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+url("https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg");
+
+background-size:cover;
+background-position:center;
+
+color:#fff;
+
+text-align:center;
+
+}
+
+.about-hero h1{
+
+font-size:60px;
+font-weight:700;
+
+}
+
+.about-hero p{
+
+font-size:18px;
+max-width:700px;
+margin:auto;
+
+}
+
+/* ABOUT BOX */
+
+.about-box{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:15px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+transition:.4s;
+
+margin-bottom:25px;
+
+}
+
+.about-box:hover{
+
+transform:translateY(-10px);
+
+}
+
+.about-box i{
+
+font-size:45px;
+
+color:#ff9800;
+
+margin-bottom:20px;
+
+}
+/*==============================
+        TEAM SECTION
+==============================*/
+
+.team-card{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    transition: .4s;
+}
+
+.team-card:hover{
+    transform: translateY(-10px);
+}
+
+.team-card img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    transition: .4s;
+}
+
+.team-card:hover img{
+    transform: scale(1.08);
+}
+
+.team-card .card-body{
+    text-align: center;
+    padding: 20px;
+}
+/*==============================
+        RESERVATION CSS CARDS
+===============================*/
